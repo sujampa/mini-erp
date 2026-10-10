@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+psycopg[binary]
+pydantic-settings
+email-validator
+pytest
+httpx
