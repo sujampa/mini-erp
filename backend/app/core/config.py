@@ -10,9 +10,12 @@ class Settings(BaseSettings):
     db_port: int = 5432
     db_name: str = "mini_erp"
 
+    jwt_secret_key: str
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
+        extra="ignore",
     )
 
 

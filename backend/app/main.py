@@ -16,6 +16,8 @@ from app.api.inventory import router as inventory_router
 from app.api.sales_order import router as sales_order_router
 from app.api.suppliers import router as suppliers_router
 from app.api.purchase_orders import router as purchase_orders_router
+from app.api.dashboard import router as dashboard_router
+from app.api.auth import router as auth_router
 
 # Business rule exceptions
 from app.core.exceptions import BusinessRuleError
@@ -50,6 +52,8 @@ app.include_router(inventory_router)
 app.include_router(sales_order_router)
 app.include_router(suppliers_router)
 app.include_router(purchase_orders_router)
+app.include_router(dashboard_router)
+app.include_router(auth_router)
 
 # Health check endpoint
 @app.get("/health")
