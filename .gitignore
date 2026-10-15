@@ -21,3 +21,5 @@ htmlcov/
 # Operating system
 .DS_Store
 Thumbs.db
+
+backend/service_audit.txt
